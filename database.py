@@ -99,7 +99,7 @@ def fetch_data(table_name):
 # insert products using place values remember to use a parameter
 def insert_products(values):
     querry="insert into products(name,buying_price,selling_price)values(%s,%s,%s)"
-    curr.execute(values,querry)
+    curr.execute(querry,values)
     connect.commit()
 
 # new_product=('Baking powder',50.00,80.00)
